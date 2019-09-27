@@ -4,7 +4,10 @@ new Vue({
     mg: 'Hello',
     nm: 3,
     ok: true,
-    url: 'https://google.com'
+    url: 'https://google.com',
+    att: 'href',
+    urlTw: 'https://twitter.com',
+    idNum: 55,
   },
   methods: {
     sayHi: function() {

@@ -13,9 +13,9 @@
 <body>
 
   <div id="app">
-    <p>
-      <a :href="url">Google</a>
-    </p>
+    <p><a :[att]="url">Google</a></p>
+		<p><a :href="urlTw" :id="idNum">Twitter</a></p>
+
     <p v-once>{{ mg }}</p>
     <p>{{ nm + 10 }}</p>
     <p>{{ ok? 'YES' : 'NO'  }}</p>
