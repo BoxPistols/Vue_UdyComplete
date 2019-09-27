@@ -1,24 +1,15 @@
 new Vue({
   el: '#app',
   data: {
-    mg: 'Hello',
-    nm: 3,
-    ok: true,
-    url: 'https://google.com',
-    att: 'href',
-    // urlTw: 'https://twitter.com',
-    //idNum: 55,
-
-    twiObj: {
-			href: 'https://twitter.com',
-			id: 55
-    }
+    num: 0
   },
   methods: {
-    sayHi: function() {
-      // return 'Hi' + "x" + 10;
-      this.mg = 'jjjjj'
-      return this.mg;
+    countUp: function() {
+      this.num += 1
+/*      if( this.num > 3){
+		    this.num = 99  
+      } */
+	    //return this.num;
     }
   }
 })
