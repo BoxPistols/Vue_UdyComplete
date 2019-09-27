@@ -5,38 +5,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.0"></script> -->
-
-  <script src="vue.js"></script>
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-11/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.3.0/milligram.min.css">
   <link rel="stylesheet" href="style.css">
   <title>Vue</title>
 </head>
 
 <body>
 
-  <div id="app">{{ mg}}</div>
+  <div id="app">
+    <p>
+      <a :href="url">Google</a>
+    </p>
+    <p v-once>{{ mg }}</p>
+    <p>{{ nm + 10 }}</p>
+    <p>{{ ok? 'YES' : 'NO'  }}</p>
+    <p>{{ sayHi() }}</p>
+  </div>
   <!-- /#app -->
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-  <script type="text/javascript">
-    new Vue({
-      el: '#app',
-      data: {
-        mg: 'Hello'
-      }
-    })
-    // export default {
-    //   mounted() {
-    //     console.log('New component mounted.')
-    //   }
-    // }
-  </script>
+  <script src="vue.js"></script>
+  <script src="app.js"></script>
 </body>
 
 </html>
