@@ -6,8 +6,13 @@ new Vue({
     ok: true,
     url: 'https://google.com',
     att: 'href',
-    urlTw: 'https://twitter.com',
-    idNum: 55,
+    // urlTw: 'https://twitter.com',
+    //idNum: 55,
+
+    twiObj: {
+			href: 'https://twitter.com',
+			id: 55
+    }
   },
   methods: {
     sayHi: function() {
