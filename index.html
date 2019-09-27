@@ -1,19 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.3.0/milligram.min.css">
-  <link rel="stylesheet" href="style.css">
+  <!-- <link rel="stylesheet" href="style.css"> -->
   <title>Vue</title>
 </head>
 
 <body>
 
   <div id="app">
-		<p v-on:mousemove="mousePosition">マウスイベント</p>
+	  <p>カウント： {{ num }}</p>
+	  <button v-on:click="countUp(2)">カウントアップ</button>
+	  
+		<p v-on:mousemove="mousePosition($event, 4)">マウスイベント</p>
 		<p>X:{{x}}, Y:{{y}}</p>
   </div>
   <!-- /#app -->
