@@ -13,8 +13,8 @@
 <body>
 
   <div id="app">
-		<p>現在 {{ num }} 回クリック<p>
-		<button v-on:click="countUp()">カウント</button>	
+		<p v-on:mousemove="mousePosition">マウスイベント</p>
+		<p>X:{{x}}, Y:{{y}}</p>
   </div>
   <!-- /#app -->
 

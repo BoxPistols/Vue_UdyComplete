@@ -1,15 +1,14 @@
 new Vue({
   el: '#app',
   data: {
-    num: 0
+    x: 0,
+    y: 0,
   },
   methods: {
-    countUp: function() {
-      this.num += 1
-/*      if( this.num > 3){
-		    this.num = 99  
-      } */
-	    //return this.num;
-    }
+    mousePosition: function(e) {
+	    //console.log(event);
+	    this.x = e.clientX;
+	    this.y = e.clientY;
+		}
   }
 })
