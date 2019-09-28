@@ -14,8 +14,13 @@
 
   <div id="app">
 	  
+	  <p>{{ ctr }}</p>
+		<button @click="ctr += 1">カウントアップ</button>
+		<!-- <p>{{ ctr >= 3 ? '↑' : '下'}}</p> -->
+		<p>{{ lessThanThree }}</p>		
+	  
 	  <input type="text" v-model="msg">
-		 <p>{{ msg }}</p>
+		<p>{{ msg }}</p>
 
 	  <p>カウント： {{ num }}</p>
 	  <!-- <button v-on:click="countUp(2)">カウントアップ</button> -->

@@ -1,6 +1,7 @@
 new Vue({
   el: '#app',
   data: {
+	  ctr: 0,
 	  num: 0,
     x: 0,
     y: 0,
@@ -25,5 +26,10 @@ new Vue({
 		myAlert: function(){
 			alert("Ah!");
 		}
+  },
+  computed: {
+	  lessThanThree: function(){
+		  return this.ctr >= 3 ? '↑' : '下'
+	  }
   }
 })
