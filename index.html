@@ -13,7 +13,8 @@
 <body>
 
   <div id="app">
-	  <h1 v-bind:class="{ red: active, 'bg-gr': !active }">Hello</h1>
+	  <!-- <h1 v-bind:class="{ red: active, 'bg-gr': !active }">Hello</h1> -->
+	  <h1 v-bind:class="classObj">Hello</h1>
 	  <button @click="active = !active">Change</button>
   </div>
   

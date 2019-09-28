@@ -1,6 +1,13 @@
 new Vue({
 	el: '#app',
 	data: {
-		active: false
-	}	
+		active: true
+	},
+	computed: {
+		classObj: function(){
+			return{
+				red: this.active, 'bg-gr': !this.active 
+			}
+		}
+	 }
 })
