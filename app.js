@@ -4,7 +4,8 @@ new Vue({
 	  num: 0,
     x: 0,
     y: 0,
-    evt: 'click'
+    evt: 'click',
+    msg: 'おはこん'
   },
   methods: {
 	  countUp: function(t){
