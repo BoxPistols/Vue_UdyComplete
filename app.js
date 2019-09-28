@@ -31,5 +31,14 @@ new Vue({
 	  lessThanThree: function(){
 		  return this.ctr >= 3 ? '↑' : '下'
 	  }
+  },
+  watch: {	  
+	  ctr: function(){
+		  var vm = this;
+		  setTimeout(function(){
+			  vm.ctr = 1000
+		  }, 3000)
+	  }
   }
+
 })
