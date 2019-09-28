@@ -15,8 +15,9 @@
   <div id="app">
 
 	  <p>カウント： {{ num }}</p>
-	  <button v-on:click="countUp(2)">カウントアップ</button>
-	
+	  <!-- <button v-on:click="countUp(2)">カウントアップ</button> -->
+		<button v-on:[evt]="countUp(20)">カウントアップ</button>
+		
 		<p v-on:mousemove="mousePosition($event, 4)">マウスイベント
 			<span v-on:mousemove.stop> マウスイベントしないで </span>
 		</p>
@@ -24,6 +25,10 @@
 		
 		<!-- <a v-on:click="noEv" href="google.com">Google</a> -->
 		<a v-on:click.prevent.stop href="google.com">Google</a>		
+		
+		<br>
+			
+		<input type="input" v-on:keyUp.enter="myAlert">
 		
   </div>
   <!-- /#app -->
