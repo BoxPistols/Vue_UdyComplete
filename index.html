@@ -16,8 +16,10 @@
 
 	  <p>カウント： {{ num }}</p>
 	  <!-- <button v-on:click="countUp(2)">カウントアップ</button> -->
-		<button v-on:[evt]="countUp(20)">カウントアップ</button>
-		
+		<!-- <button v-on:[evt]="countUp(20)">カウントアップ</button> -->
+
+		<button @click="countUp(20)">カウントアップ</button>		
+
 		<p v-on:mousemove="mousePosition($event, 4)">マウスイベント
 			<span v-on:mousemove.stop> マウスイベントしないで </span>
 		</p>
