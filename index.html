@@ -6,42 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="milligram.css">
-  <!-- <link rel="stylesheet" href="style.css"> -->
+	<link rel="stylesheet" href="app.css">
   <title>Vue</title>
 </head>
 
 <body>
 
   <div id="app">
-	  
-	  <p>{{ ctr }}</p>
-		<button @click="ctr += 1">カウントアップ</button>
-		<!-- <p>{{ ctr >= 3 ? '↑' : '下'}}</p> -->
-		<p>{{ lessThanThree }}</p>		
-	  
-	  <input type="text" v-model="msg">
-		<p>{{ msg }}</p>
-
-	  <p>カウント： {{ num }}</p>
-	  <!-- <button v-on:click="countUp(2)">カウントアップ</button> -->
-		<!-- <button v-on:[evt]="countUp(20)">カウントアップ</button> -->
-
-		<button @click="countUp(20)">カウントアップ</button>		
-
-		<p v-on:mousemove="mousePosition($event, 4)">マウスイベント
-			<span v-on:mousemove.stop> マウスイベントしないで </span>
-		</p>
-		<p>X:{{x}}, Y:{{y}}</p>
-		
-		<!-- <a v-on:click="noEv" href="google.com">Google</a> -->
-		<a v-on:click.prevent.stop href="google.com">Google</a>		
-		
-		<br>
-			
-		<input type="input" v-on:keyUp.enter="myAlert">
-		
+	  <h1 v-bind:class="{ red: active, 'bg-gr': !active }">Hello</h1>
+	  <button @click="active = !active">Change</button>
   </div>
-  <!-- /#app -->
+  
 
   <script src="vue.js"></script>
   <script src="app.js"></script>
