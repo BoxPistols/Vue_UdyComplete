@@ -13,6 +13,9 @@ new Vue({
 	    //console.log(event);
 	    this.x = e.clientX / dvEv;
 	    this.y = e.clientY / dvEv;
-		}
+		},
+		//noEv: function(){
+			//event.preventDefault();
+		//}
   }
 })

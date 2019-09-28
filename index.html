@@ -13,11 +13,18 @@
 <body>
 
   <div id="app">
+
 	  <p>カウント： {{ num }}</p>
 	  <button v-on:click="countUp(2)">カウントアップ</button>
-	  
-		<p v-on:mousemove="mousePosition($event, 4)">マウスイベント</p>
+	
+		<p v-on:mousemove="mousePosition($event, 4)">マウスイベント
+			<span v-on:mousemove.stop> マウスイベントしないで </span>
+		</p>
 		<p>X:{{x}}, Y:{{y}}</p>
+		
+		<!-- <a v-on:click="noEv" href="google.com">Google</a> -->
+		<a v-on:click.prevent.stop href="google.com">Google</a>		
+		
   </div>
   <!-- /#app -->
 
