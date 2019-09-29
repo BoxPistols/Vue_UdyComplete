@@ -1,7 +1,10 @@
 .red{
 	color: crimson;
+	transition: 0.3s;
 }
 
 .bg-gr{
 	background: teal;
+	/*color: white;	*/  
+	transition: 0.3s;
 }
