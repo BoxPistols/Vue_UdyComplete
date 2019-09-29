@@ -8,6 +8,9 @@ new Vue({
 		bgCol: 'orange',
 		styleObj:{
 			color: 'blue'
+		},
+		baseStyle:{
+			fontSize: '60px'
 		}
 	},
 	computed: {
