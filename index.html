@@ -12,18 +12,11 @@
 
 <body>
 
-  <div id="app">
-	  <!-- <h1 v-bind:class="{ red: active, 'bg-gr': !active }">Hello</h1> -->
-	  <h1 v-bind:class="classObj">Hello</h1>
-	  <button @click="active = !active">Change</button>
-	  <h1 :class="[{red: !active}, bg ]">Hello</h1>
-	  
-		<h1 :style="{color: texCol, 'background-color': bgCol}">Hello</h1>
-	
-	
-		<h1 :style="[styleObj, baseStyle]">Hello</h1>
-	  	  
-  </div>
+<div id="app">
+	<p v-if="ok">OK!</p>
+	<p v-else-if="maybe">maybeOk!!</p>	
+	<p v-else>Not</p>	
+</div>
   
 
   <script src="vue.js"></script>
