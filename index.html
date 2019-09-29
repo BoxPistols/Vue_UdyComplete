@@ -17,6 +17,9 @@
 	  <h1 v-bind:class="classObj">Hello</h1>
 	  <button @click="active = !active">Change</button>
 	  <h1 :class="[{red: !active}, bg ]">Hello</h1>
+	  
+		<h1 :style="{color: texCol, 'background-color': bgCol}">Hello</h1>
+	  	  
   </div>
   
 

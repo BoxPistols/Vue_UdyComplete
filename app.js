@@ -3,7 +3,12 @@ new Vue({
 	data: {
 		active: true,
 		bg: 'bg-gr',
-		color: 'red'
+		color: 'red',
+		texCol: 'red',
+		bgCol: 'orange',
+		styleObj:{
+			color: 'blue'
+		}
 	},
 	computed: {
 		classObj: function(){
