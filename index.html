@@ -13,10 +13,32 @@
 <body>
 
 <div id="app">
+
+<!-- <template v-if="ok">
+	<p>Hello</p>
+	<p>Googd By</p>
+	<p>おはよう</p>	
+</template>	 -->
+
+<div v-if="ok">
+	<p>Hello</p>
+	<p>Googd By</p>
+	<p>おはよう</p>	
+</div>	
+<button @click="ok = !ok">Button</button>
+<div v-show="ok">
+	<p>Hello</p>
+	<p>Googd By</p>
+	<p>おはよう</p>	
+</div>	
+
+
+<!-- 	
 	<p v-if="ok">OK!</p>
 	<p v-else-if="maybe">maybeOk!!</p>	
 	<p v-else>Not</p>	
-</div>
+ -->
+ </div>
   
 
   <script src="vue.js"></script>
