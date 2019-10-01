@@ -18,6 +18,13 @@
 			{{ i + 1 }} : {{ fruit }}
 		</li>
 	</ul>
+
+	<ul>
+		<li v-for="( val, key, index) in obj">
+		{{ index }} : {{ key }} > {{ val }}
+		</li>
+	</ul>
+
 </div>
   
   <script src="vue.js"></script>
