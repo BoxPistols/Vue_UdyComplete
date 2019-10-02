@@ -2,9 +2,10 @@ new Vue({
 	el: '#app',
 	data: {
 		fruits: ['バナナ','りんご','みかん'],
-	obj: {
-		name: '田中',
-		age: 20	
+	},
+	methods: {
+		remove: function(){
+			this.fruits.shift()
 		}
-	}
+	}	
 })

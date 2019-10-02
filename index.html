@@ -14,28 +14,13 @@
 
 <div id="app">
 
-	<p v-for="j of 10">{{ j }}</p>
-
 	<ul>
 		<li v-for="(fruit, i) in fruits">
 			{{ i + 1 }} : {{ fruit }}
+			<input type="text">
 		</li>
 	</ul>
-	
-	<ul>
-		<li v-for="( val, key, index) in obj">
-		{{ index }} : {{ key }} > {{ val }}
-		<hr>
-		</li>
-	</ul>
-		
-	<ul>
-		<hr>
-		<template v-for="val in obj">
-			<li>{{ val }}</li>
-			<hr>
-		</template>
-	</ul> -->
+	<button @click="remove">TOP削除</button>
 </div>
 
 <script src="vue.js"></script>
