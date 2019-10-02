@@ -13,17 +13,7 @@
 <body>
 
 <div id="app">
-
-	<ul>
-		<!-- Add Key -->
-		<li v-for="(fruit, i) in fruits" :key="fruit">
-			<!-- Change index -->
-			{{ i + 1 }} : {{ fruit }}
-			<input type="text">
-		</li>
-	</ul>
-	
-	<button @click="remove">TOP削除</button>
+	<p>{{ msg }}</p>
 </div>
 
 <script src="vue.js"></script>

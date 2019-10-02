@@ -1,11 +1,8 @@
-new Vue({
+var vm = new Vue({
 	el: '#app',
 	data: {
-		fruits: ['バナナ','りんご','みかん'],
-	},
-	methods: {
-		remove: function(){
-			this.fruits.shift()
-		}
-	}	
+		msg: "メッセ"
+		},
 })
+
+vm.msg = "上書き"
