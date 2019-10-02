@@ -1,7 +1,7 @@
 new Vue({
 	el: '#app',
 	data: {
-		fruits: ['Sign Up','Credit'],
+		fruits: ['バナナ','りんご','みかん'],
 	obj: {
 		name: '田中',
 		age: 20	
