@@ -15,11 +15,14 @@
 <div id="app">
 
 	<ul>
-		<li v-for="(fruit, i) in fruits">
+		<!-- Add Key -->
+		<li v-for="(fruit, i) in fruits" :key="fruit">
+			<!-- Change index -->
 			{{ i + 1 }} : {{ fruit }}
 			<input type="text">
 		</li>
 	</ul>
+	
 	<button @click="remove">TOP削除</button>
 </div>
 
