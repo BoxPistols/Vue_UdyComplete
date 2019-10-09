@@ -4,14 +4,15 @@ var vm = new Vue({
 		msg: "メッセ",
 		name: '柿ピー'
 	},
+	template: '	<h1>こんちくわ{{ name }} さん</h1>',
 	computed: {
 		myData: function(){
 			return this.$data
 		}
-	}
-})
+	},
+}).$mount('#app')
 
-vm.$mount('#app')
+//vm.$mount('#app')
 
 
 //console.log(data === vm.$data)
