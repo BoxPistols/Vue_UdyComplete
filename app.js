@@ -1,16 +1,21 @@
+Vue.component('hello', {
+	template: '	<h1>こんちくわ{{ name }} さん</h1>'
+});
+
 var vm = new Vue({
 //	el: '#app', 
 	data: {
 		msg: "メッセ",
 		name: '柿ピー'
-	},
-	template: '	<h1>こんちくわ{{ name }} さん</h1>',
+	},	
+	//template: '	<h1>こんちくわ{{ name }} さん</h1>',
 	computed: {
 		myData: function(){
 			return this.$data
 		}
 	},
 }).$mount('#app')
+
 
 //vm.$mount('#app')
 
